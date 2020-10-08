@@ -1,0 +1,20 @@
+{
+  "name": "TSEatDaBurger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Created Using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhagatabhijeet/TSEatDaBurger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhagatabhijeet/TSEatDaBurger/issues"
+  },
+  "homepage": "https://github.com/bhagatabhijeet/TSEatDaBurger#readme"
+}
