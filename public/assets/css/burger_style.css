@@ -1,7 +1,8 @@
 body {
   width: 99%;
   height: 900px;
-  background-color: #fc6;
+  background-color: #5e2e1d /* #fc6*/;
+  color: #e39622 !important;
 }
 
 #top-bar {
@@ -65,4 +66,13 @@ body {
 
 h1 {
   color: #f30;
+}
+
+.btn {
+  background-color: #aeb53d;
+  color: #5e2e1d;
+}
+
+pre {
+  color: #e39622;
 }
