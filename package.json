@@ -4,7 +4,8 @@
   "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Created Using TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon sever.js"
   },
   "repository": {
     "type": "git",
