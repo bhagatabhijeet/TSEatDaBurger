@@ -1,4 +1,4 @@
-import { createConnection, ConnectionConfig } from "mysql";
+import { createConnection, ConnectionConfig, Connection } from "mysql";
 
 const conconfig: ConnectionConfig = {
   host: "localhost",
@@ -8,7 +8,13 @@ const conconfig: ConnectionConfig = {
   database: "burgers_db",
 };
 
-const connection = createConnection(conconfig);
+let connection:Connection;
+if(process.env.JAWSDB_URL){
+  connection = createConnection(process.env.JAWSDB_URL);
+}else{
+
+  connection = createConnection(conconfig);
+}
 
 connection.connect((err) => {
   if (err) {

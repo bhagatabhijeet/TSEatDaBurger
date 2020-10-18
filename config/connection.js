@@ -8,7 +8,13 @@ var conconfig = {
     password: "password",
     database: "burgers_db",
 };
-var connection = mysql_1.createConnection(conconfig);
+var connection;
+if (process.env.JAWSDB_URL) {
+    connection = mysql_1.createConnection(process.env.JAWSDB_URL);
+}
+else {
+    connection = mysql_1.createConnection(conconfig);
+}
 connection.connect(function (err) {
     if (err) {
         console.error("error connecting: " + err.stack);
