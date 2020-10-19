@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var express = require("express");
 var burgersController_1 = require("../../controllers/burgersController");
 var router = express.Router();
@@ -13,4 +13,4 @@ router.route("/burgers").get(burgersController_1.getAllBurgers);
 router.route("/burgers/create").post(burgersController_1.createBurger);
 // Devour /put buger and back to index
 router.route("/burgers/:id").put(burgersController_1.devourBurger);
-exports.default = router;
+exports["default"] = router;

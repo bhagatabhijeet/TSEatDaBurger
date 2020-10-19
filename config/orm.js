@@ -1,9 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var connection_1 = __importDefault(require("./connection"));
+exports.__esModule = true;
+var connection_1 = require("./connection");
 function printQuestionMarks(num) {
     var arr = [];
     for (var i = 0; i < num; i++) {
@@ -21,7 +18,7 @@ function objToSql(ob) {
 var orm = {
     all: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
-        connection_1.default.query(queryString, function (err, result) {
+        connection_1["default"].query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
@@ -39,7 +36,7 @@ var orm = {
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
         console.log(queryString);
-        connection_1.default.query(queryString, vals, function (err, result) {
+        connection_1["default"].query(queryString, vals, function (err, result) {
             if (err) {
                 throw err;
             }
@@ -55,7 +52,7 @@ var orm = {
         queryString += " WHERE ";
         queryString += condition;
         console.log(queryString);
-        connection_1.default.query(queryString, function (err, result) {
+        connection_1["default"].query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
@@ -63,4 +60,4 @@ var orm = {
         });
     }
 };
-exports.default = orm;
+exports["default"] = orm;

@@ -35,16 +35,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 exports.devourBurger = exports.createBurger = exports.getAllBurgers = void 0;
-var burgerOrm_1 = __importDefault(require("../models/burgerOrm"));
+var burgerOrm_1 = require("../models/burgerOrm");
 function getAllBurgers(req, res) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            burgerOrm_1.default.all(function (burgerData) {
+            burgerOrm_1["default"].all(function (burgerData) {
                 res.render("index", { burger_data: burgerData });
             });
             return [2 /*return*/];
@@ -55,7 +52,7 @@ exports.getAllBurgers = getAllBurgers;
 function createBurger(req, res) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            burgerOrm_1.default.create(req.body.burger_name, function (result) {
+            burgerOrm_1["default"].create(req.body.burger_name, function (result) {
                 // wrapper for orm.js that using MySQL insert callback will return a log to console,
                 // render back to index with handle
                 console.log(result);
@@ -69,7 +66,7 @@ exports.createBurger = createBurger;
 function devourBurger(req, res) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            burgerOrm_1.default.update(parseInt(req.params.id), function (result) {
+            burgerOrm_1["default"].update(parseInt(req.params.id), function (result) {
                 // wrapper for orm.js that using MySQL update callback will return a log to console,
                 // render back to index with handle
                 console.log(result);

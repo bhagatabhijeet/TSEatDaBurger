@@ -1,5 +1,5 @@
 import express = require("express");
-import exphb from "express-handlebars";
+import exphb = require("express-handlebars");
 import router from "./routes";
 
 const PORT = process.env.PORT || 8000;
