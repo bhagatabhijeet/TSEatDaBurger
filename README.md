@@ -3,8 +3,8 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 
  [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bhagatabhijeet/TSEatDaBurger)
- [![GitHub forks](https://img.shields.io/github/forks/bhagatabhijeet/bhagatabhijeet)](https://github.com/bhagatabhijeet/bhagatabhijeet/network)
- [![GitHub stars](https://img.shields.io/github/stars/bhagatabhijeet/bhagatabhijeet)](https://github.com/bhagatabhijeet/bhagatabhijeet/stargazers)
+ [![GitHub forks](https://img.shields.io/github/forks/bhagatabhijeet/TSEatDaBurger)](https://github.com/bhagatabhijeet/TSEatDaBurger/network)
+ [![GitHub stars](https://img.shields.io/github/stars/bhagatabhijeet/TSEatDaBurger)](https://github.com/bhagatabhijeet/TSEatDaBurger/stargazers)
  
  
  ## Table of Contents
