@@ -1,4 +1,4 @@
-# TSEatDaBurger
+# TSEatDaBurger (Offline. This app has been taken offline from Heroku)
 Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Created Using *TypeScript*
 
 
